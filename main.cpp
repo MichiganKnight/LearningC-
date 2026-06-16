@@ -30,5 +30,12 @@ int main() {
     std::cout << returnFive() << std::endl;
     std::cout << returnFive() + 2 << std::endl;
 
+    printEmptySpace();
+
+    int x = getValueFromUser();
+    int y = getValueFromUser();
+
+    std::cout << x << " + " << y << " = " << (x + y) << std::endl;
+
     return 0;
 }

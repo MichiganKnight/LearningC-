@@ -12,3 +12,12 @@ void simpleMath() {
     std::cout << "Double: " << doubleNum << std::endl;
     std::cout << "Triple: " << tripleNum << std::endl;
 }
+
+int getValueFromUser() {
+    std::cout << "Enter a Number: ";
+
+    int input;
+    std::cin >> input;
+
+    return input;
+}
