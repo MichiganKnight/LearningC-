@@ -1,12 +1,11 @@
 ﻿#include <iostream>
 
+#include "helpers/helper.h"
 #include "functions/functions.h"
+#include "functions/void_functions.h"
 #include "simple_math/simple_math.h"
 #include "simple_math/return_five.h"
-
-void printEmptySpace() {
-    std::cout << std::endl;
-}
+#include "advanced_functions/function_parameters.h"
 
 void menu() {
     std::cout << "=== Tutorial Menu ===" << std::endl;
@@ -17,11 +16,13 @@ void menu() {
     std::cout << "2. Simple Functions" << std::endl;
     std::cout << "3. Return Five" << std::endl;
     std::cout << "4. Get Value From User" << std::endl;
-    std::cout << "5. Exit" << std::endl;
+    std::cout << "5. Print 'Hi'" << std::endl;
+    std::cout << "6: Function Parameters" << std::endl;
+    std::cout << "7. Exit" << std::endl;
 
     printEmptySpace();
 
-    std::cout << "Enter a Number (1-5): ";
+    std::cout << "Enter a Number (1-7): ";
 
     int choice;
     std::cin >> choice;
@@ -50,6 +51,16 @@ void menu() {
         }
 
         case 5:
+            printHi();
+
+            break;
+
+        case 6:
+            calculatorMenu();
+
+            break;
+
+        case 7:
             std::cout << "Exiting..." << std::endl;
             break;
 
