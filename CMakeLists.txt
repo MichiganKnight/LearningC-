@@ -15,4 +15,5 @@ add_executable(LearningC__ main.cpp
         advanced_functions/function_parameters.cpp
         advanced_functions/function_parameters.h
         helpers/helper.cpp
-        helpers/helper.h)
+        helpers/helper.h
+)
